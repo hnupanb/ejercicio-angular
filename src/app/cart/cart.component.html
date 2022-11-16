@@ -1,6 +1,5 @@
 <h3>Cart</h3>
-<div class="cart-item" *ngFor="let item from items">
+<div class="cart-item" *ngFor="let item; from: items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
-<a [routerLink]="['/']">back</a>

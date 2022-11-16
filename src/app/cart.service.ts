@@ -19,4 +19,7 @@ items: Product[] =[];
     this.items = [];
     return this.items;
   }
+  getTotalItems(){
+    return this.items.length;
+  }
 }
